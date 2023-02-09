@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+const port = process.env.PORT || 8080;
 
 
 // set the view engine to ejs
@@ -23,7 +24,7 @@ app.get('/', function(req, res) {
 
 
 
-app.listen(8080, function () {
+app.listen(port, function () {
   console.log('App listening on port 8080!');
 });
 
