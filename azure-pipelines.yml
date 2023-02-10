@@ -7,9 +7,7 @@ trigger:
 - main
 
 pool:
-  name: buildagentpool
-  demands:
-   - agent.name -equals INDUR1QJ99VLT
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: NodeTool@0
