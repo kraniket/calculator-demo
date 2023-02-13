@@ -21,10 +21,14 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'calculator-demo'
+    SourceFolder: './'
     Contents: |
-      /**
-    TargetFolder: '$(build.artifactstagingdirectory)/calculator-demo'
+      node_modules/**
+      public/**
+      views/**
+      app.js
+      package.json
+    TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
 
 - task: ArchiveFiles@2
