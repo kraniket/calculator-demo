@@ -30,7 +30,7 @@ steps:
     rootFolderOrFile: '$(Build.Sourcesdirectory)/'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.Sourcesdirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(Build.BuildId).zip'
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
