@@ -21,10 +21,10 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: './'
+    SourceFolder: 'calculator-demo'
     Contents: |
       /**
-    TargetFolder: './'
+    TargetFolder: '$(build.artifactstagingdirectory)/calculator-demo'
     CleanTargetFolder: true
 
 - task: ArchiveFiles@2
