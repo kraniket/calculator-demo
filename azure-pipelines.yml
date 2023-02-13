@@ -22,12 +22,6 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: './'
-    Contents: |
-      node_modules/**
-      public/**
-      views/**
-      app.js
-      package.json
     TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
 
