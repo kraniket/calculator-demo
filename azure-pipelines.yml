@@ -23,7 +23,7 @@ steps:
   inputs:
     SourceFolder: './'
     Contents: |
-      **
+      **\*
     TargetFolder: './'
     CleanTargetFolder: true
 
