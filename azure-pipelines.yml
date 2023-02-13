@@ -41,10 +41,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
-- task: ExtractFiles@1
-  inputs:
-    archiveFilePatterns: '**/*.zip'
-    destinationFolder: '/wwwroot/'
-    cleanDestinationFolder: true
-    overwriteExistingFiles: false
