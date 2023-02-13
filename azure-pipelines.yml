@@ -23,8 +23,7 @@ steps:
   inputs:
     SourceFolder: './'
     Contents: |
-      **\*.js
-      **\*.json
+      **\*
     TargetFolder: './'
     CleanTargetFolder: true
 
