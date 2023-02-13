@@ -17,7 +17,7 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'sudo install'
+    command: 'install'
 
 - task: CopyFiles@2
   inputs:
