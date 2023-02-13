@@ -21,7 +21,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: './' #calculator-demo
+    #SourceFolder: './' #calculator-demo
     Contents: |
       **/*
     TargetFolder: '$(build.artifactstagingdirectory)'
@@ -29,7 +29,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
