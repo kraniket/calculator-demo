@@ -19,12 +19,12 @@ steps:
   inputs:
     command: 'install'
 
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: './' #calculator-demo
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-    CleanTargetFolder: true
+#- task: CopyFiles@2
+#  inputs:
+#    SourceFolder: './' #calculator-demo
+#    Contents: '**'
+#    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+#    CleanTargetFolder: true
 
 - task: ArchiveFiles@2
   inputs:
