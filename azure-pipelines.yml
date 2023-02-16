@@ -23,7 +23,7 @@ steps:
   inputs:
     SourceFolder: './' #calculator-demo
     Contents: '**'
-    TargetFolder: '$(Build.SourcesDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
 
 - task: ArchiveFiles@2
