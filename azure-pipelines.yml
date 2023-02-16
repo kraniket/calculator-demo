@@ -20,7 +20,7 @@ steps:
     command: 'install'
 
 #- task: CopyFiles@2
-#  inputs:
+##  inputs:
 #    SourceFolder: './' #calculator-demo
 #    Contents: '**'
 #    TargetFolder: '$(Build.ArtifactStagingDirectory)'
