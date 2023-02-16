@@ -23,20 +23,20 @@ steps:
   inputs:
     SourceFolder: './' #calculator-demo
     Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
+    TargetFolder: 'Build.SourcesDirectory'
     CleanTargetFolder: true
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
+    rootFolderOrFile: 'Build.SourcesDirectory'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: 'Build.SourcesDirectory/$(Build.BuildId).zip'
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: 'Build.SourcesDirectory'
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
